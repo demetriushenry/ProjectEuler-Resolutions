@@ -15,16 +15,17 @@ public class PE03LargestPrimeFactor {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-        int t = Math.abs(in.nextInt());
-        long[] list = new long[t];
-        for(int a0 = 0; a0 < t; a0++){
-            long n = Math.abs(in.nextLong());
-            list[a0] = getLargestPrimeFactor(n);
-        }
+        	int t = Math.abs(in.nextInt());
+        	long[] list = new long[t];
+		for(int a0 = 0; a0 < t; a0++){
+		    long n = Math.abs(in.nextLong());
+		    list[a0] = getLargestPrimeFactor(n);
+		}
         
-        for (long l : list) {
+		for (long l : list) {
 			System.out.println("" + l);
 		}
+		
+		in.close();
 	}
-
 }
