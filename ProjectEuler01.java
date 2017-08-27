@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Hello {
+public class Solution {
 	
 	static int filterMultiple(int count) {
 		int result = 0;
