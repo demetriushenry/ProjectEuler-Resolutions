@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class ProjectEuler04 {
+public class PE04LargestPalindrome {
 
 	static boolean isPalindrome(int n) {
 		int tmp = n;
@@ -35,18 +35,18 @@ public class ProjectEuler04 {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-        int t = Math.abs(in.nextInt());
-        int[] list = new int[t];
-        for(int i = 0; i < t; i++){
-            int n = Math.abs(in.nextInt());
-            list[i] = getLargestPalindrome(n);
-        }
-        
-        for (int l : list) {
+		int t = Math.abs(in.nextInt());
+		int[] list = new int[t];
+		for(int i = 0; i < t; i++){
+		    int n = Math.abs(in.nextInt());
+		    list[i] = getLargestPalindrome(n);
+		}
+
+		for (int l : list) {
 			System.out.println("" + l);
 		}
-        
-        in.close();
+
+		in.close();
 	}
 
 }
