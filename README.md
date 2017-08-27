@@ -1,1 +1,1 @@
-# ProjectEuler-Resolutions
+# ProjectEuler Solutions
